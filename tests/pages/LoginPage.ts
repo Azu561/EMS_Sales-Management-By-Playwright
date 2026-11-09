@@ -4,7 +4,7 @@ export class LoginPage{
     readonly page:Page;
     readonly username: Locator;
     readonly password: Locator;
-   readonly loginButton:Locator;
+    readonly loginButton:Locator;
   
 
     constructor(page:Page){
@@ -16,7 +16,7 @@ export class LoginPage{
 
     }
     async gotoLoginPage(){
-        await this.page.goto('https://www.saucedemo.com/');
+     await this.page.goto('https://www.saucedemo.com/');
     }
     async login( u:string,p:string){
         await this.username.fill(u);
